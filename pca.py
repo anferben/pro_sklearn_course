@@ -42,7 +42,7 @@ if __name__ == '__main__':
     plt.show()
 
     # entrenando el modelo
-    logistic = LogisticRegression(solver='lbfgs')
+    logistic = LogisticRegression(max_iter=100)
 
     dt_train = pca.transform(X_train)
     dt_test = pca.transform(X_test)
